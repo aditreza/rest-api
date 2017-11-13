@@ -24,7 +24,8 @@ Route | HTTP | Description
 
 ## Usage
 #### With only npm:
-```npm install
+```
+npm install
 npm start
 npm run dev
 ```
