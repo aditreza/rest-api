@@ -34,7 +34,7 @@ const createUser = (req, res) => {
       email: req.body.email,
       username: req.body.username,
       password: hash,
-      role: req.body.role
+      role: 'user'
     }).then(function () {
       res.send('success create user')
     }).catch(err => {

@@ -5,7 +5,6 @@ const morgan = require('morgan')
 const app = express()
 // morgan
 app.use(morgan('dev'))
-
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({
     extended: false

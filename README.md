@@ -1,33 +1,23 @@
-# My App
+# REST API
 Demo app with basic REST API
 
-# REST API
-#### List of basic routes:
-Route | HTTP | Description
------ | ---- | -----------
-`/api/hello?name={name}` | GET | Print hello, `{name}` !
 #### List of User routes:
 Route | HTTP | Description
 ----- | ---- | -----------
-`/api/users` | GET | Get all the users
-`/api/users/:id` | GET | Get a single
-`/api/users` | POST | Create a user
-`/api/users/:id` | DELETE | Delete a user
-`/api/users/:id` | PUT | Update a user with new info
-`/api/users/:id` | PATCH | Update a user with specific new info 
-#### List of Filter routes:
-Route | HTTP | Description
------ | ---- | -----------
-`/api/users?name="{name}"` | GET | Get `{name}` match in users
-`/api/users?name="{na}"` | GET | Get `{na}` like in users
-
+`/api/users` | GET | Get all the users info(admin only)
+`/api/users/:id` | GET | Get a single user info(admin & user Auth)
+`/api/users` | POST | Create a user(admin only)
+`/api/users/:id` | DELETE | Delete a user(admin only)
+`/api/users/:id` | PUT | Update a user with new info(admin & user Auth)
+`/api/signup` | POST | Sign up with new User info
+`/api/signin` | POST | Sign up while get an access token based on credentials
 
 ## Usage
 #### With only npm:
 ```
+sequelize db:migrate
 npm install
 npm start
-npm run dev
 ```
 
-Acces the website via `http://localhost:3000` or API via `http://localhost:3000/api` 
+Acces the website via `http://localhost:3000` or API via `http://localhost:3000/api`
