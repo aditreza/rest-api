@@ -22,3 +22,4 @@ npm start
 ```
 
 Acces the website via `http://localhost:3000` or API via `http://localhost:3000/api`
+sample `https://xmpl-rest-api.herokuapp.com/api/signup`
