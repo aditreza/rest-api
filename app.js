@@ -5,8 +5,7 @@ const morgan = require('morgan')
 const app = express()
 // morgan
 app.use(morgan('dev'))
-//load css
-app.use(express.static(__dirname + '/views'))
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({
     extended: false
