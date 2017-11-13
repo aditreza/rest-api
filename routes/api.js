@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const User = require('../controllers/userControllers')
-const verify = require('../middleware/isLogin')
+const verify = require('../middleware/islogin')
 
 router.get('/users', verify.isLogin, verify.isAdmin, User.getAllUsers)
 router.get('/users/:id', verify.isLogin, verify.isAdmin, verify.isAuthById, User.getUserById)
