@@ -16,10 +16,12 @@ Route | HTTP | Description
 ## Usage
 #### With only npm:
 ```
-sequelize db:migrate
 npm install
+sequelize db:migrate
+touch .env | secretKey=yoursecretkey
 npm start
 ```
 
-Acces the website via `http://localhost:3000` or API via `http://localhost:3000/api`
-sample `https://xmpl-rest-api.herokuapp.com/api/signup`
+Acces the website via API via  `http://localhost:3000/api`
+
+#### sample `https://xmpl-rest-api.herokuapp.com/api/signup`
