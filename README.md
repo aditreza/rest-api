@@ -1,2 +1,8 @@
-# rest-api
-REST API, documentation with markdown, securing API with JWT
+# My App
+Demo app with basic REST API
+
+# REST API
+#### List of basic routes:
+Route | HTTP | Description
+----- | ---- | -----------
+`/api/hello?name={name}` | GET | Print hello, `{name}` !
