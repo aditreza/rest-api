@@ -13,11 +13,14 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json())
 
 //routing
+const index = require('./routes/index')
 const api = require('./routes/api')
+
+app.use('/', index)
 app.use('/api', api)
 
 
-app.listen(3000, err => {
+app.listen(process.env.PORT || 3000, err => {
   if (!err) {
     console.log('serv listen on port 3000')
   }

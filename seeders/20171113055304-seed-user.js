@@ -9,15 +9,17 @@ module.exports = {
             username: "johndoe",
             password: "123JD678",
             createdAt: new Date(),
-            updatedAt: new Date()
-        }, {
+            updatedAt: new Date(),
+            role : user
+        },{
             first_name: 'Reza',
             last_name: 'Adit',
             email: 'rezaadit@test.com',
             username: "rezaadit",
-            password: "rezaadit9876",
+            password: "$2a$10$hKVtYbgXUc1RpZ85P3ZJvO8ACXUMqCMqGvSNLIJ0IExWwyPam5.7u",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            role: admin
         }], {});
     },
 

@@ -1,5 +1,6 @@
 # REST API
 Demo app with basic REST API
+use express, sequelize and jsonwebtoken
 
 #### List of User routes:
 Route | HTTP | Description
