@@ -10,7 +10,7 @@ module.exports = {
             password: "123JD678",
             createdAt: new Date(),
             updatedAt: new Date(),
-            role : user
+            role : "user"
         },{
             first_name: 'Reza',
             last_name: 'Adit',
@@ -19,8 +19,8 @@ module.exports = {
             password: "$2a$10$hKVtYbgXUc1RpZ85P3ZJvO8ACXUMqCMqGvSNLIJ0IExWwyPam5.7u",
             createdAt: new Date(),
             updatedAt: new Date(),
-            role: admin
-        }], {});
+            role: "admin"
+        }]);
     },
 
     down: (queryInterface, Sequelize) => {
